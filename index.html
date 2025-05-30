@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental MARSER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #ffffff;
+            color: #202124;
+        }
+        header {
+            background-color: #1A73E8;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 2em;
+            background-color: #F1F3F4;
+        }
+        .hero h1 {
+            color: #1A73E8;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .hero button {
+            background-color: #00C896;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        section {
+            padding: 2em;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .service {
+            background: #F1F3F4;
+            padding: 1em;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            background-color: #1A73E8;
+            color: white;
+            padding: 1em;
+        }
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00C896;
+            color: white;
+            padding: 1em;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Clínica Dental MARSER</h1>
+    <p>Tu sonrisa, nuestra prioridad</p>
+</header>
+
+<div class="hero">
+    <h1>¡Agenda tu cita fácilmente!</h1>
+    <p>Haz clic abajo para hablar con nuestra asistente virtual</p>
+    <button onclick="openAgent()">Hablar con la asistente</button>
+</div>
+
+<section>
+    <h2 style="text-align:center;">Nuestros Servicios</h2>
+    <div class="services">
+        <div class="service"><strong>Limpieza Dental</strong></div>
+        <div class="service"><strong>Ortodoncia</strong></div>
+        <div class="service"><strong>Implantes</strong></div>
+        <div class="service"><strong>Urgencias</strong></div>
+    </div>
+</section>
+
+<footer>
+    <p>Contacto: contacto@marser.com | Dirección: Av. Central 123, Ciudad</p>
+</footer>
+
+<div class="chat-widget" onclick="openAgent()">💬</div>
+
+<script>
+    function openAgent() {
+        window.open("https://tu-n8n-agent-url.com", "_blank");
+    }
+</script>
+
+</body>
+</html>
